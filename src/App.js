@@ -3,9 +3,9 @@ import { Meme } from './components/Meme'
 import './App.css';
 
 const objectToQueryParam = (obj) => {
-  const params = Object.entries(obj).map(([key, value]) => `${key}=${value}`)
-  return '?' + params.join('&')
-}
+  const params = Object.entries(obj).map(([key, value]) => `${key}=${value}`);
+  return '?' + params.join('&');
+};
 
 function App() {
   const [templates, setTemplates] = useState([]);
